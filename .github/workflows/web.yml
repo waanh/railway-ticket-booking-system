@@ -1,29 +1,33 @@
 name: github-pages
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 permissions:
-  checks: write
   contents: write
   pages: write
   id-token: write
   deployments: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
 
     strategy:
       matrix:
         node-version: [18.x]
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
@@ -37,14 +41,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v2
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: 'dist'
+          path: dist
 
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deploy
         uses: actions/deploy-pages@v2

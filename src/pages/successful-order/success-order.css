@@ -1,0 +1,254 @@
+.success__background {
+  height: 1020px;
+  background-color: #E5E5E5;
+}
+
+.success__title {
+  position: relative;
+  top: -29%;
+  left: 7%;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  color: #FFFFFF;
+}
+
+.success {
+  position: relative;
+  top: -27%;
+  left: 7%;
+  width: 86%;
+  max-width: 1404px;
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 2px 2px #00000040;
+}
+
+.success__order {
+  display: flex;
+  height: 148px;
+}
+
+.success__order-number {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 72px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #3E3C41;
+}
+
+.success__price {
+  display: flex;
+  align-items: center;
+  margin-right: 72px;
+}
+
+.success__price-sign {
+  display: flex;
+  width: 21px;
+  height: 27px;
+  background-image: url(../../assets/images/sign.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.success__price-text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #928F94;
+  margin-right: 15px;
+}
+
+.success__price-number {
+  display: flex;
+}
+
+.success__price-number > p {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #3E3C41;
+}
+
+.success__description {
+  display: flex;
+  height: 295px;
+  background-color: #F4F3F6;
+}
+
+.description__email-img,
+.description__print-img,
+.description__present-img {
+  width: 155px;
+  height: 155px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.description__email-img {
+  background-image: url(../../assets/images/suc-email.png);
+}
+
+.description__print-img {
+  background-image: url(../../assets/images/suc-print.png);
+}
+
+.description__present-img {
+  background-image: url(../../assets/images/suc-present.png);
+}
+
+.success__description-email,
+.success__description-print,
+.success__description-present {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 205px;
+}
+
+.success__description-email {
+  margin-left: 15%;
+}
+
+.success__description-print {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.success__description-present {
+  margin-right: 15%;
+}
+
+.success__description-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #292929;
+}
+
+.success__name {
+  height: 452px;
+}
+
+.success__name-order,
+.success__name-text,
+.success__name-thx {
+  margin-left: 12%;
+}
+
+.success__name-order {
+  padding-top: 75px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.success__name-text {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #292929;
+}
+
+.success__name-thx {
+  margin-top: 70px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #292929;
+}
+
+.success__grades {
+  display: flex;
+  height: 161px;
+  background-color: #FFB31F;
+}
+
+.success__grade {
+  display: flex;
+  margin-left: 83px;
+  margin-right: auto;
+}
+
+.success__grade-text {
+  padding-top: 70px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #292929;
+}
+
+.success__grade-stars {
+  display: flex;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.star__one,
+.star__two,
+.star__three,
+.star__four,
+.star__five,
+.star__one-check,
+.star__two-check,
+.star__three-check,
+.star__four-check,
+.star__five-check {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.star__one,
+.star__two,
+.star__three,
+.star__four,
+.star__five {
+  fill: #FFB31F;
+}
+
+.star__one-check,
+.star__two-check,
+.star__three-check,
+.star__four-check,
+.star__five-check {
+  fill:#FFFFFF;
+}
+
+.success__btn {
+  width: 323px;
+  height: 60px;
+  margin: auto 78px;
+  border: 1px solid #3E3C41;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #292929;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+}

@@ -1,0 +1,145 @@
+/* About */
+.main__about {
+  height: 420px;
+}
+
+.about__title {
+  width: 347px;
+  height: 41px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #292929;
+  margin: 0 auto auto 7%;
+}
+
+.about__content {
+  display: flex;
+  width: 90%;
+}
+
+.about__line {
+  margin-top: 34px;
+  margin-left: 11%;
+  width: 9px;
+  height: 231px;
+  background: #FFA800;
+}
+
+.about__text {
+  margin-left: 19px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #292929;
+}
+
+.about__text:nth-child(1) {
+  margin-top: 30px;
+}
+
+.about__text-last {
+  font-weight: 700;
+}
+
+/* How */
+.main__how {
+  position: relative;
+  height: 575px;
+  background-image: linear-gradient(rgba(255, 214, 0, 0.5), rgba(255, 214, 0, 0.5)), url(../../assets/images/how.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #FFD600;
+  background-blend-mode: multiply;
+  opacity: 0.8;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  
+}
+
+.how__title {
+  display: flex;
+  width: 100%;
+}
+
+.how__title-text {
+  margin: 70px auto auto 7%;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.how__title-btn {
+  width: 270px;
+  height: 60px;
+  margin-top: 60px;
+  margin-right: 8%;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #FFCA62;
+    color: #2D2B2F;
+    transition: color 0.3s linear;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    color: #2D2B2F;
+  }
+}
+
+.how__items {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.how__item {
+  margin-top: 100px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how__content-text {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.how__image-first,
+.how__image-second,
+.how__image-third {
+  width: 162px;
+  height: 162px;
+}
+
+.how__image-first {
+  background-image: url(../../assets/images/first.png);
+}
+
+.how__image-second {
+  background-image: url(../../assets/images/second.png);
+}
+
+.how__image-third {
+  background-image: url(../../assets/images/third.png);
+}

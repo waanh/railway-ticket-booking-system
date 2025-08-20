@@ -1,0 +1,23 @@
+#root {
+  font-family: "Roboto", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

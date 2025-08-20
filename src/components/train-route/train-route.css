@@ -1,0 +1,277 @@
+.train__route {
+  display: flex;
+  min-height: 268px;
+  margin-bottom: 50px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.train__name {
+  min-width: 190px;
+  background-color: #E4E0E9;
+}
+
+.train__name-image {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 43px;
+  width: 86px;
+  height: 86px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  background-image: url(../../assets/images/train.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.train__name-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: #3E3C41;
+  margin: 15px 0;
+}
+
+.train__name-direction {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #292929;
+  text-transform: capitalize;
+  margin-left: 25px;
+}
+
+.train__direction {
+  width: 469px;
+  border-right: 1px dashed #E5E5E5;
+}
+
+.train__direction-route {
+  display: flex;
+  margin: 50px 0 0 29px;
+}
+
+.direction__time {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+}
+
+.direction__city {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.direction__station {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #928F94;
+}
+
+.train__direction-time {
+  width: 50px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.travel__time {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #C4C4C4;
+}
+
+.direction__arrow {
+  display: flex;
+  margin-top: 25px;
+  width: 30px;
+  height: 20px;
+  background-image: url(../../assets/images/dir-right.png);
+}
+
+.train__tickets {
+  display: flex;
+  flex-direction: column;
+}
+
+.train__tickets-options {
+  margin: 43px 22px 27px 27px;
+}
+
+.train__ticket {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 26px;
+  height: 29px;
+}
+
+.ticket__class {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #3E3C41;
+}
+
+.amount__seat {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #FFA800;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.seat__up-down {
+  position: absolute;
+  width: 260px;
+  background-color: #E5E5E5;
+  border-radius: 5px;
+  left: -110px;
+  top: 25px;
+  z-index: 1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.seat__up-down::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -4px;
+  left: 115px;
+  transform: rotate(45deg);
+  background-color: #E5E5E5;
+}
+
+.seat__up {
+  display: flex;
+  align-items: baseline;
+  margin: 9px 17px 9px 32px;
+}
+
+
+.ticket__start-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.ticket__start-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #928F94;
+}
+
+.ticket__start-number,
+.seat__ticket-start-number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #2D2B2F;
+  margin: 0 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.seat__ticket-start-number {
+  margin-left: auto;
+}
+
+.sign__rub {
+  width: 22px;
+  height: 22px;
+  background-image: url(../../assets/images/sign.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding-top: 4px;
+}
+
+.train__facilities {
+  display: flex;
+  justify-content: space-between;
+  width: 92px;
+  height: 20px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 28px;
+}
+
+.train__facilities-wifi,
+.train__facilities-express,
+.train__facilities-coffee {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.train__facilities-wifi {
+  width: 24px;
+  height: 20px;
+  background-image: url(../../assets/images/wifi.png);
+}
+
+.train__facilities-express {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/images/express.png);
+}
+
+.train__facilities-coffee {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/images/cup.png);
+}
+
+.facilities__wifi-have {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/images/have-wifi.png);
+}
+
+.facilities__express-have {
+  width: 22px;
+  height: 20px;
+  background-image: url(../../assets/images/have-express.png);
+}
+
+.facilities__coffee-have {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/images/have-cup.png);
+}
+
+.train__choice-btn {
+  margin: 18px 20px 23px 35px;
+  width: 228px;
+  height: 39px;
+  background-color: #FFA800;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: filter 200ms ease-in-out;
+  }
+
+  &:focus {
+    border: 1px solid #FFA800;
+    background-color: transparent;
+    color: #FFA800;
+  }
+}

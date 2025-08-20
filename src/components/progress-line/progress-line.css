@@ -1,0 +1,89 @@
+.progress__line {
+  position: absolute;
+  bottom: -80px;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #3E3C41;
+}
+
+.line__step-one,
+.line__step-two,
+.line__step-three,
+.line__step-four {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.line__step-two,
+.line__step-three,
+.line__step-four {
+  margin-left: 40px;
+}
+
+.step__number {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.step__number > p {
+  position: absolute;
+  top: 8px;
+  left: 17px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.step__text {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.step__arrow {
+  position: absolute;
+  left: 95%;
+}
+
+.arrow__top {
+  width: 40px;
+  height: 40px;
+  border-right: 2px solid #E5E5E5;
+  transform: skewX(35deg);
+}
+
+.arrow__bottom {
+  width: 40px;
+  height: 40px;
+  border-right: 2px solid #E5E5E5;
+  transform: skewX(-35deg);
+}
+
+.step__arrow-out {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  left: -40px;
+}
+
+.steps__start,
+.steps__end {
+  height: 100%;
+  width: 25%;
+}
+
+.current__step {
+  background-color: #FFA800;
+}

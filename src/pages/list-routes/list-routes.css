@@ -1,0 +1,136 @@
+.list__routes {
+  width: 100%;
+}
+
+.none__routes {
+  margin: 0 280px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #000000;
+}
+
+.header__list-routes {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.list__routes-found {
+  display: flex;
+}
+
+.list__routes-found > p,
+.list__routes-found > span,
+.list__routes-sort > p,
+.list__routes-show > p,
+.list__routes-show > span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #928F94;
+  margin-right: 5px;
+}
+
+.list__routes-sort {
+  display: flex;
+  position: relative;
+  margin-left: 245px;
+  margin-right: 30px;
+}
+
+
+.list__routes-sort-select {
+  position: absolute;
+  left: 135px;
+  top: -8px;
+  width: 140px;
+  background-color: #F7F5F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.list__routes-sort-select > div {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #3E3C41;
+  height: 21px;
+  padding: 9px 7px;
+  border-bottom: 1px solid #E5E5E5;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #FFCA62;
+  }
+}
+
+.sort__selected {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #3E3C41;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.list__routes-show {
+  display: flex;
+  margin-left: auto;
+}
+
+.list__routes-show > span {
+  cursor: pointer;
+}
+
+.footer__list-routes {
+  margin-top: 100px;
+}
+
+.list__routes-pages {
+  display: flex;
+}
+
+.list__routes-pages-previous,
+.list__routes-page,
+.list__routes-pages-next {
+  width: 85px;
+  height: 75px;
+  border: 2px solid #C4C4C4;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+.list__routes-pages-previous {
+  margin-left: auto;
+  background-image: url(../../assets/images/left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list__routes-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #928F94;
+
+  &:hover {
+    background-color: #FFA800;
+    color: #FFFFFF;
+    transition: color 200ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+  }
+}
+
+.choice__page {
+  color: #FFA800;
+  border: 2px solid #FFA800;
+}
+
+.list__routes-pages-next {
+  background-image: url(../../assets/images/right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,804 @@
+.coaches__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 50px;
+}
+
+.coach {
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
+
+.choice__train-left {
+  display: flex;
+  margin: 36px 0 32px 2%;
+}
+
+.choice__train-right {
+  display: flex;
+  margin: 36px 19px 32px auto;
+}
+
+.choice__train-img-left,
+.choice__train-img-right {
+  display: flex;
+  width: 76px;
+  height: 60px;
+}
+
+.choice__train-img-left {
+  margin-right: 10px;
+  background-image: url(../../assets/images/Subtract-right.png);
+}
+
+.choice__train-img-right {
+  margin-right: 10px;
+  margin-left: auto;
+  background-image: url(../../assets/images/Subtract-left.png);
+}
+
+.choice__train-btn {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #292929;
+  width: 325px;
+  height: 60px;
+  border: 1px solid #292929;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #292929;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    color: #FFA800;
+    transition: all 300ms ease-in-out;
+  }
+
+  &:focus {
+    border: 1px solid #FFA800;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #292929;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.coach__train {
+  display: flex;
+  background: #F7F6F6;
+  min-height: 123px;
+}
+
+.coach__train-route {
+  display: flex;
+  width: 240px;
+}
+
+.coach__train-img {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/images/train-img.png);
+  margin: 45px 30px;
+}
+
+.coach__train-description {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.train__description-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #3E3C41;
+  margin-bottom: 5px;
+}
+
+.train__description-city {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.coach__direction-time {
+  display: flex;
+  width: 53%;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.coach__direction-city {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coach__time {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+}
+
+.coach__direction-name {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.coach__direction-station {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #928F94;
+}
+
+.coach__duration {
+  display: flex;
+}
+
+.coach__duration-img {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/images/time-img.png);
+  margin: 47px 10px 46px 0;
+}
+
+.coach__duration-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 42px;
+}
+
+.amount__tickets {
+  margin-top: 40px;
+  height: 337px;
+  border-bottom: 1px dashed #C4C4C4;;
+}
+
+.amount__tickets-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #292929;
+  margin: 0 auto 15px 20px;
+}
+
+.tickets__age {
+  display: flex;
+}
+
+.tickets__age-inputs {
+  width: 30%;
+  height: 192px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    border: 1px solid rgba(255, 168, 0, 0.79);
+  }
+
+  &:focus-within {
+    background-color: #F7F6F6;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+}
+
+.tickets__age-input {
+  width: 240px;
+  height: 50px;
+  padding-left: 15px;
+  background: #FFFFFF;
+  border: 1px solid #928F94;
+  border-radius: 5px;
+  caret-color: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #292929;
+
+  &:focus-within {
+    outline: none;
+  }
+}
+
+.tickets__age-input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #292929;
+}
+
+.tickets__adults-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #928F94;
+  margin-top: 23px;
+  width: 240px;
+}
+
+.coach__type-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #292929;
+  margin: 27px auto 35px 20px;
+}
+
+.coach__types {
+  display: flex;
+}
+
+.coach__type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  height: 140px;
+}
+
+.type__text,
+.type__text-active {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #292929;
+  margin-top: 20px;
+}
+
+.coach__type > span {
+  display: flex;
+  height: 50px;
+}
+
+.type__text-active {
+  color: #FFA800;
+}
+
+.type__fourth-img {
+  width: 31px;
+  background-image: url(../../assets/images/fourth.png);
+}
+
+.type__third-img {
+  width: 50px;
+  background-image: url(../../assets/images/third-class.png);
+}
+
+.type__second-img {
+  width: 50px;
+  background-image: url(../../assets/images/second-class.png);
+}
+
+.type__first-img {
+  width: 57px;
+  background-image: url(../../assets/images/first-class.png);
+}
+
+.type__fourth-img-active {
+  width: 31px;
+  background-image: url(../../assets/images/fourth-take.png);
+}
+
+.type__third-img-active {
+  width: 50px;
+  background-image: url(../../assets/images/third-take.png);
+}
+
+.type__second-img-active {
+  width: 50px;
+  background-image: url(../../assets/images/second-take.png);
+}
+
+.type__first-img-active {
+  width: 57px;
+  background-image: url(../../assets/images/first-take.png);
+}
+
+.coaches__numbering {
+  display: flex;
+  background-color: #FFA80070;
+  height: 37px;
+}
+
+.coaches__numbering > p {
+  margin-right: 15px;
+  align-self: center;
+}
+
+.coaches__numbers {
+  display: flex;
+  align-items: baseline;
+  margin: auto auto auto 33px;
+}
+
+.coaches__numbers-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #292929;
+}
+
+.coaches__number-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  margin-left: 5px;
+}
+
+.coaches__number-current {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.coach__description-prices {
+  display: flex;
+  height: 160px;
+  margin-bottom: 100px;
+}
+
+.coach__number {
+  background-color: #FFA80070;
+  width: 190px;
+}
+
+.coach__number-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 84px;
+  color: #292929;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.coach__number-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #292929;
+}
+
+.coach__seats-amount,
+.coach__seats-price {
+  margin-top: 33px;
+  margin-left: 40px;
+  width: 21%;
+}
+
+.coach__seats-amount > p,
+.coach__seats-price > p {
+  margin-bottom: 22px;
+}
+
+.seats__amount-title,
+.seats__price-title,
+.coach__services-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #928F94;
+}
+
+.seats__amount-num {
+  color: #000000;
+}
+
+.seats__amount-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000000;
+}
+
+.seats__amount-num {
+  font-weight: 600;
+}
+
+.seats__price-text {
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+}
+
+.seats__price-text > span {
+  margin-left: 10px;
+}
+
+.coach__services {
+  margin-top: 33px;
+}
+
+.coach__services-text {
+  margin-bottom: 20px;
+}
+
+.coach__services-img {
+  display: flex;
+}
+
+.service__move {
+  position: relative;
+}
+
+.service__wifi-empty,
+.service__linens-empty,
+.service__air,
+.service__wifi,
+.service__linens,
+.service__coffee,
+.service__air-selected,
+.service__wifi-selected,
+.service__linens-selected,
+.service__coffee-selected {
+  display: flex;
+  width: 36px;
+  height: 35px;
+  margin-right: 13px;
+  border: 1px solid #292929;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.service__wifi-empty {
+  background-image: url(../../assets/images/wifi-black.png);
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.service__linens-empty {
+  background-image: url(../../assets/images/linens-black.png);
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.service__air-selected,
+.service__wifi-selected,
+.service__linens-selected {
+  background-color: #FDB935;
+  border: none;
+}
+
+.service__air {
+  background-image: url(../../assets/images/air-black.png);
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.service__wifi {
+  background-image: url(../../assets/images/wifi-black.png);
+
+  &:hover {
+    background-color: #FFA800;
+    transition: background-color 300ms ease;
+  }
+}
+
+.service__linens {
+  background-image: url(../../assets/images/linens-black.png);
+
+  &:hover {
+    background-color: #FFA800;
+    transition: background-color 300ms ease;
+  }
+}
+
+.service__coffee {
+  background-image: url(../../assets/images/cup-black.png);
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.service__air-selected {
+  background-image: url(../../assets/images/air-white.png);
+}
+
+.service__wifi-selected {
+  background-image: url(../../assets/images/wifi-white.png);
+}
+
+.service__linens-selected {
+  background-image: url(../../assets/images/linens-white.png);
+}
+
+.service__coffee-selected {
+  background-image: url(../../assets/images/cup-white.png);
+}
+
+.service__included {
+  background-color: #FFA800;
+  opacity: 0.5;
+  border: none;
+}
+
+.service__description {
+  position: absolute;
+  min-width: 84px;
+  min-height: 32px;
+  left: -32px;
+  top: 40px;
+  background: #F5F4F6;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #292929;
+  padding: 7px;
+  text-align: center;
+}
+
+.coach__seats-selected {
+  width: 200px;
+  height: 72px;
+  background: #F3F3F3;
+  border-radius: 5px;
+  margin-top: 60px;
+  display: flex;
+}
+
+.coach__seats-selected > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #292929;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.coach__description {
+  border-bottom: 1px dashed #C4C4C4;
+  margin-bottom: 33px;
+}
+
+.seats__info-first,
+.seats__info-second,
+.seats__info-third,
+.seats__info-fourth {
+  display: flex;
+  position: relative;
+  width: 920px;
+  height: 145px;
+  margin: 0 18px 80px;
+}
+
+.seats__info-first {
+  background-image: url(../../assets/images/coach-first.png);
+}
+
+.seats__info-second {
+  background-image: url(../../assets/images/coach-second.png);
+}
+
+.seats__info-third {
+  background-image: url(../../assets/images/coach-third.png);
+}
+
+.seats__info-fourth {
+  background-image: url(../../assets/images/coach-fourth.png);
+}
+
+.coach__button,
+.coach__button-disable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 222px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #FFA800;
+  border: none;
+  border-radius: 5px;
+  margin: 63px 0 124px auto;
+  cursor: pointer;
+}
+
+.coach__button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease-in-out;
+} 
+
+.coach__button:focus {
+  background-color: transparent;
+  border: 1px solid #FFA800;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: #FFA800;
+  transition: all 300ms ease-in-out;
+} 
+
+.coach__button-inactive {
+  background-color: #928F94;
+}
+
+.coach__button-disable {
+  background-color: #928F94;
+  cursor: not-allowed;
+}
+
+.scheme__seats-first,
+.scheme__seats-second,
+.scheme__seats-third,
+.scheme__seats-fourth {
+  position: absolute;
+  width: 89.63px;
+  height: 114px;
+  top: 28px;
+  left: 121px;
+}
+
+.scheme__seats-fourth {
+  width: 717.63px;
+  height: 26px;
+  left: 131px;
+}
+
+.seat__class {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #000000;
+}
+
+.seat__top-left {
+  width: 27px;
+  height: 32px;
+  top: 1px;
+  left: 2px;
+}
+
+.seat__bottom-left {
+  width: 27px;
+  height: 32px;
+  top: 33px;
+  left: 2px;
+}
+
+.seat__side-left {
+  width: 43px;
+  height: 25px;
+  top: 86px;
+  left: 2px;
+}
+
+.seat__top-right {
+  width: 27px;
+  height: 32px;
+  top: 1px;
+  left: 62px;
+}
+.seat__bottom-right {
+  width: 27px;
+  height: 32px;
+  top: 33px;
+  left: 62px;
+}
+
+.seat__side-right {
+  width: 43px;
+  height: 25px;
+  top: 86px;
+  left: 45px;
+}
+
+.seat__have {
+  color: #000000;
+  background-color: #F2F2F2;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #FFA800;
+    z-index: 1;
+  }
+}
+
+.seat__not-have {
+  color: #F2F2F2;
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}
+
+.seat__selected {
+  box-sizing: border-box;
+  border: 2px solid #FFA800;
+  z-index: 1;
+}
+
+.seat__win-top,
+.seat__aisle-top,
+.seat__aisle-bottom,
+.seat__win-bottom {
+  width: 30px;
+  height: 20px;
+  left: 11px;
+}
+
+.seat__win-top {
+  top: 5px;
+}
+
+.seat__aisle-top {
+  top: 27px;
+}
+
+.seat__aisle-bottom {
+  top: 65px;
+  left: 57px;
+}
+
+.seat__win-bottom {
+  top: 87px;
+}
+
+.seat__left,
+.seat__right {
+  width: 30px;
+  height: 64px;
+  top: 1px;
+}
+
+.seat__left {
+  left: 2px;
+}
+
+.seat__right {
+  left: 60px;
+}
+
+.total__price {
+  display: flex;
+  margin: 0 38px 32px 835px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #FFA800;
+}
+
+.total__price > span {
+  margin-left: 5px;
+  width: 14px;
+  height: 17px;
+  background-size: cover;
+  align-self: center;
+}

@@ -1,0 +1,207 @@
+.payment {
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.data__head,
+.method__head {
+  display: flex;
+  align-items: center;
+  height: 107px;
+  background-color: #F9F9F9;
+}
+
+.data__head {
+  border-bottom: 1px dashed #928F94;
+}
+
+.data__title,
+.method__title {
+  margin-left: 35px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #292929;
+}
+
+.data__inputs-names {
+  display: flex;
+  gap: 20px;
+  margin-left: 35px;
+}
+
+.data__name-label {
+  margin-top: 30px;
+}
+
+.data__name-label > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #292929;
+  margin-bottom: 10px;
+}
+
+.data__name-input {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #928F94;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.data__inputs-phone {
+  margin-top: 54px;
+  margin-left: 35px;
+}
+
+.data__phone-label,
+.data__mail-label {
+  display: block;
+  width: 360px;
+}
+
+.data__phone-label > p,
+.data__mail-label > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #292929;
+  margin-bottom: 10px;
+}
+
+.data__phone-input,
+.data__mail-input {
+  width: 360px;
+  height: 50px;
+  border: 1px solid #928F94;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #292929;
+  padding-left: 10px;
+}
+
+.data__phone-input::placeholder,
+.data__mail-input::placeholder {
+  color: #C4C4C4;
+}
+
+.data__inputs-mail {
+  margin-top: 38px;
+  margin-left: 35px;
+}
+
+.payment__method {
+  margin-top: 90px;
+}
+
+.method__head {
+  border-top: 1px dashed #928F94;
+  border-bottom: 1px dashed #928F94;
+}
+
+.method__check-online {
+  display: flex;
+  margin: 50px auto 30px 35px;
+}
+
+.method__check-cash {
+  display: flex;
+  margin: 58px auto 82px 35px;
+}
+
+.method__check-input,
+.method__check-input-ok {
+  width: 28px;
+  height: 28px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.method__check-input {
+  border: 1px solid #928F94;
+}
+
+.method__check-input-ok {
+  border: 1px solid #FFA800;
+  background-image: url(../../assets/images/ok.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.method__check-text,
+.method__check-text-ok {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.method__check-text {
+  color: #928F94;
+}
+
+.method__check-text-ok {
+  color: #FFA800;
+}
+
+.methods__payment {
+  border-bottom: 1px dashed #928F94;
+}
+
+.methods__payment-text {
+  display: flex;
+  margin-left: 35px;
+  margin-bottom: 64px;
+}
+
+.methods__payment-text > p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #292929;
+  width: 190px;
+  margin-right: 55px;
+
+}
+
+.payment__button,
+.payment__button-ok {
+  display: block;
+  width: 323px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 116px;
+  margin-left: auto;
+}
+
+.payment__button-ok {
+  background-color: #FFA800;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+}
+
+.payment__button {
+  background-color: #928F94;
+  cursor: not-allowed;
+}
